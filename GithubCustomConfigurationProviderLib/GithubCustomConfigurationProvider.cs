@@ -36,7 +36,7 @@ namespace GithubCustomConfigurationProviderLib
         public void Load()
         {
             using var client = new HttpClient();
-            client.DefaultRequestHeaders.Add("User-Agent", "YourAppNameHere");
+            client.DefaultRequestHeaders.Add("User-Agent", "dalisama");
             if (!string.IsNullOrEmpty(_token))
             {
                 client.DefaultRequestHeaders.Add("Authorization", $"token {_token}");

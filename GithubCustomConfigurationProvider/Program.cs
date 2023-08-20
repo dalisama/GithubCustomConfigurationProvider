@@ -10,15 +10,15 @@ namespace GithubCustomConfigurationProvider
 
         {
             Console.WriteLine("Hello, World!");
-            Environment.SetEnvironmentVariable("REPO", "GithubCustomConfigurationProvider");
-            Environment.SetEnvironmentVariable("FILENAME", "jsconfig.json");
-            Environment.SetEnvironmentVariable("TOKEN", "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");//read only token
+            Environment.SetEnvironmentVariable("REPO", "dalisama/GithubCustomConfigurationProvider");
+            Environment.SetEnvironmentVariable("FILENAME", "ConfigurationData/jsconfig.json");
+            Environment.SetEnvironmentVariable("TOKEN", "");//read only token
 
             IConfiguration Configuration = new ConfigurationBuilder()
                          .AddGitHubConfiguration("REPO", "FILENAME", "TOKEN")
                          .Build();
 
-
+            Console.WriteLine("Hello, World!");
 
         }
     }
