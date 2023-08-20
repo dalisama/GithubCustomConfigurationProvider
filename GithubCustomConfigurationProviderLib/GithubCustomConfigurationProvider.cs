@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GithubCustomConfigurationProviderLib
 {
-    public class GithubCustomConfigurationProvider: IConfigurationProvider
+    public class GithubCustomConfigurationProvider : IConfigurationProvider
     {
 
 
@@ -19,9 +19,12 @@ namespace GithubCustomConfigurationProviderLib
 
         public GithubCustomConfigurationProvider(string repo, string filename, string token)
         {
-            _repo =Environment.GetEnvironmentVariable( repo);
-            _filename = Environment.GetEnvironmentVariable( filename);
+            _repo = Environment.GetEnvironmentVariable(repo);
+            Console.WriteLine(_repo);
+            _filename = Environment.GetEnvironmentVariable(filename);
+            Console.WriteLine(_filename);
             _token = Environment.GetEnvironmentVariable(token);
+            Console.WriteLine(_token.Substring(0, 5) + "*****");
         }
 
         public IEnumerable<string> GetChildKeys(IEnumerable<string> earlierKeys, string parentPath)
