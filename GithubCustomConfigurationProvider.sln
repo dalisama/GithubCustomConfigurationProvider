@@ -4,8 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubCustomConfigurationProvider", "GithubCustomConfigurationProvider\GithubCustomConfigurationProvider.csproj", "{92CB4106-2509-4E4D-ABD1-663D75AAB136}"
+	ProjectSection(ProjectDependencies) = postProject
+		{335B0996-98E9-40F9-8E01-596606D5D2F6} = {335B0996-98E9-40F9-8E01-596606D5D2F6}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubCustomConfigurationProviderLib", "GithubCustomConfigurationProviderLib\GithubCustomConfigurationProviderLib.csproj", "{335B0996-98E9-40F9-8E01-596606D5D2F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationData", "ConfigurationData\ConfigurationData.csproj", "{57DD52F3-267E-44A7-AD26-D76C46A9B11E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{335B0996-98E9-40F9-8E01-596606D5D2F6} = {335B0996-98E9-40F9-8E01-596606D5D2F6}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,10 @@ Global
 		{335B0996-98E9-40F9-8E01-596606D5D2F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{335B0996-98E9-40F9-8E01-596606D5D2F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{335B0996-98E9-40F9-8E01-596606D5D2F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57DD52F3-267E-44A7-AD26-D76C46A9B11E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57DD52F3-267E-44A7-AD26-D76C46A9B11E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57DD52F3-267E-44A7-AD26-D76C46A9B11E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57DD52F3-267E-44A7-AD26-D76C46A9B11E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
