@@ -18,7 +18,9 @@ namespace GithubCustomConfigurationProvider
                          .AddGitHubConfiguration("REPO", "FILENAME", "TOKEN")
                          .Build();
 
-            Console.WriteLine("Hello, World!");
+            var testdata = Configuration.GetSection("testdata").Value;
+
+            Console.Read();
 
         }
     }

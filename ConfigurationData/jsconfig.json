@@ -1,6 +1,6 @@
 {
 
-  "thebest": "dalisama",
-  "secretoflife": "43",
-  "from.to.where": "home"
+  "testdata.thebest": "dalisama",
+  "testdata.secretoflife": "43",
+  "testdata.from.to.where": "home"
 }
